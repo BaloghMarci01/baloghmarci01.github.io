@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foglalás</title>
+    <link rel="stylesheet" href="foglalas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="oldtownescape.html"><img src="kepek/logo.png" alt="logó"></a></div>
+            <ul class="links">
+                <li><a href="oldtownescape.html" class="menu">Főoldal</a></li>
+                <li><a href="szallas.html" class="menu">Szállás</a></li>
+                <li><a href="oldtownescape.html#about" class="menu">Rólunk</a></li>
+                <li><a href="oldtownescape.html#contact" class="menu">Kapcsolat</a></li>
+            </ul>
+            <a href="foglalas.html" class="action_btn">Foglalás</a>
+            <div class="toggle_btn">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="toggle_btn_close">
+                <i class='bx bx-x'></i>
+            </div>
+        </nav>
+
+        <nav class="dropdown">
+                <li><a href="oldtownescape.html" class="menu">Főoldal</a></li>
+                <li><a href="szallas.html" class="menu">Szállás</a></li>
+                <li><a href="oldtownescape.html#about" class="menu">Rólunk</a></li>
+                <li><a href="oldtownescape.html#contact" class="menu">Kapcsolat</a></li>
+                <li><a href="foglalas.html" class="action_btn">Foglalás</a></li>
+        </nav>
+    </header>
+
+        <main>
+            <section class="booking-section">
+                <h1>Foglalás</h1>
+                <form id="booking-form">
+                    <label for="checkin">Érkezés dátuma:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+      
+                    <label for="checkout">Távozás dátuma:</label>
+                    <input type="date" id="checkout" name="checkout" required>
+      
+                    <button type="submit">Foglalás</button>
+                </form>
+      
+                <div id="popup" class="popup">
+                    <p>Köszönjük a foglalását, hamarosan elküldjük a visszaigazoló emailt! További szép napot!</p>
+                    <button id="close-popup">Bezárás</button>
+                </div>
+            </section>
+        </main>
+
+    <script src="foglalas.js"></script>
+
+</body>
+</html>

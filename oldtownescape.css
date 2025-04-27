@@ -1,0 +1,1323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url(kepek/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.7);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    transform: translateY(-95px);
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background: url(kepek/stefania.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 500px;
+    border-radius: 10%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    transform: translateY(100%);
+    opacity: 0;
+    animation: slideUp-hero-container 1s ease-out 1s forwards;
+}
+
+@keyframes slideUp-hero-container {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(380px);
+        opacity: 1;
+    }
+}
+
+.hero .hero-container h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+    color: orange;
+}
+
+.hero .hero-container p {
+    font-weight: bold;
+    margin-top:  130px;
+    font-size: 1.3rem;
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
+    color: orange;
+}
+
+.hero .hero-container button {
+    padding: 10px;
+    font-size: 1.5rem;
+    background: orange;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: scale 0.3s ease
+}
+
+.hero .hero-container button:hover {
+    scale: 1.1;
+    box-shadow: 0px  10px 15px rgba(0, 0, 0, 0.7);
+}
+
+.hero .small-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px;
+    height: 600px;
+    width: 300px;
+    background: url(kepek/boat.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.7);
+    transform: translateY(100%);
+    opacity: 0;
+    animation: slideup-small-container1 2s ease-out 1s forwards;
+}
+
+@keyframes slideup-small-container1 {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(450px);
+        opacity: 1;
+    }
+}
+
+.hero .small-container2 {
+    height: 600px;
+    width: 300px;
+    background: url(kepek/oldcity.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+    transform: translateY(100%);
+    opacity: 0;
+    animation: slideup-small-container2 2s ease-out 1s forwards;
+}
+
+@keyframes slideup-small-container2 {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(450px);
+        opacity: 1;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+.menu {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.navbar img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+.menu:hover {
+    font-size: 1.3rem;
+    padding: 5px;
+    background: orange;
+    border-radius: 15px;
+}
+
+header {
+    position: relative;
+    padding: 1rem 2rem;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar .toggle_btn_close {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background: orange;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.action_btn:hover {
+    padding: 0.6rem 1.6rem;
+    font-size: 1.3rem;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.action_btn:active {
+    scale: 1.3rem;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown.open {
+    height: 330px;
+}
+
+.dropdown li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bg {
+    margin: 0;
+    background: url(kepek/beach3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+    transform: translateY(-200px);
+    position: relative;
+    z-index: -1;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    gap: 40;
+    padding: 20px;
+    height: 600px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hex-grid {
+    flex: 1 1 400px;
+    max-width: 700px;
+    position: relative;
+    height: 460px;
+  }
+  
+  .hex-grid .hex {
+    position: absolute;
+    width: 240px;
+    height: 280px;
+    object-fit: cover;
+    clip-path: polygon(
+      50% 0%,
+      100% 25%,
+      100% 75%,
+      50% 100%,
+      0% 75%,
+      0% 25%
+    );
+  }
+  
+  .hex-grid .hex:nth-child(1) {
+    top: 0;
+    left: -100px;
+  }
+  
+  .hex-grid .hex:nth-child(2) {
+    top: 0;
+    left: 150px;
+  }
+  
+  .hex-grid .hex:nth-child(3) {
+    top: 220px;
+    left: 20px;
+  }
+  
+  .hex-grid .hex:nth-child(4) {
+    top: 220px;
+    left: 270px;
+  }
+
+.about .text-box {
+    width: 500px;
+}
+
+.about .text-box h2 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.about .text-box p {
+    margin-top: 30px; 
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.about .text-box button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.5rem;
+    background: orange;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: scale 0.3s ease
+}
+
+.about .text-box button:hover {
+    scale: 1.1;
+    box-shadow: 0px  10px 15px rgba(0, 0, 0, 0.7);
+}
+
+.programs {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: transparent;
+  }
+  
+  .programs-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease;
+    z-index: 1;
+  }
+  
+  .item.active {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 2;
+  }
+  
+  .content {
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+    color: #fff;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.7);
+    border-radius: 20px;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .program1 {
+    background-image: url('kepek/castle.jpg');
+  }
+  
+  .program2 {
+    background-image: url('kepek/program2.jpg');
+  }
+  
+  .program3 {
+    background-image: url('kepek/program3.jpg');
+  }
+  
+  .program4 {
+    background-image: url('kepek/program4.jpg');
+  }
+  
+  .program5 {
+    background-image: url('kepek/program5.webp');
+  }
+  
+  .program6 {
+    background-image: url('kepek/program6.jpg');
+  }
+
+  .name {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  .desc {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    max-width: 600px;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  button {
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    border: none;
+    background: orange;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    font-size: 1.4rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+  }
+
+  .reviews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    padding: 40px;
+  }
+
+  .reviews-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    display: block;
+    object-fit: cover;
+  }
+
+  .testimonal {
+    background: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.7);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+  }
+
+  .testimonal i {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffd700;
+  }
+
+  .name {
+    color: orange;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 800px;
+    height: auto;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: lightblue;
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+
+  .contact-info h2 {
+    color: orange;
+    font-size: 40px;
+  }
+
+  .contact-info p {
+    color: grey;
+  }
+
+  .h {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .h i {
+    color: grey;
+    font-size:20px;
+  }
+
+  .h a {
+    color: grey;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+.icons i {
+    background: grey;
+    color: white;
+    padding: 5px;
+    border-radius: 25%;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+.contact-form {
+    padding: 20px;
+    background: white;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid orange;
+    border-radius: 6px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.contact-form textarea {
+    min-height: 100px;
+}
+
+.checkbox-group {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    font-size: 18px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    margin-top: 100px;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+footer .social-icons,
+footer .footer-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer .social-icons li,
+footer .footer-menu li {
+    list-style: none;
+}
+
+footer .social-icons li a{
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+footer .footer-menu li a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.3s;
+    opacity: 0.75;
+}
+
+footer .social-icons li a:hover {
+    transform: translateY(-10px);
+}
+
+footer .footer-menu li a:hover {
+    opacity: 1;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(kepek/wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: wave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: wave2 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: wave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: wave2 3s linear infinite;
+}
+
+@keyframes wave {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes wave2 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@media (max-width: 1300px){
+    .hex-grid {
+        transform: scale(0.7);
+        width: 400px;
+        height: 300px;
+    }
+
+    .about .text-box h2 {
+        font-size: 2rem;
+    }
+
+    .about .text-box p {
+        font-size: 1rem;
+    }
+
+    .about .text-box button {
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 1150px) {
+    .hero-container {
+        width: 400px;
+    }
+
+    .hero .hero-container p {
+        margin-top: 130px;
+    }
+
+    .hero .small-container1 {
+        width: 250px;
+    }
+
+    .hero .small-container2 {
+        width: 250px;
+    }
+}
+
+@media(max-width: 1050px) {
+    .hero-container {
+        height: 500px;
+        width: 450px;
+    }
+
+    .hero .small-container1 {
+        display: none;
+    }
+
+    .hero .small-container2 {
+        display: none;
+    }
+
+    .hex-grid {
+        transform: scale(0.6);
+        width: 400px;
+        height: 300px;
+    }
+
+    .about .text-box h2 {
+        font-size: 1.8rem;
+    }
+
+    .about .text-box p {
+        font-size: 0.8rem;
+    }
+
+    .about .text-box button {
+        font-size: 1rem;
+    }  
+}
+
+@media(max-width: 992px) {
+    
+    .navbar .links, 
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown {
+        display: block;
+        z-index: 3;
+    }
+
+    .hex-grid {
+        transform: scale(0.6);
+        width: 400px;
+        height: 300px;
+    }
+
+    .about .text-box h2 {
+        font-size: 1.8rem;
+    }
+
+    .about .text-box p {
+        font-size: 0.8rem;
+    }
+
+    .about .text-box button {
+        font-size: 1rem;
+    }
+
+    .reviews {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "first first"
+          "second third";
+        grid-gap: 30px;
+        width: 90%;
+        padding: 30px;
+      }
+    
+      .reviews .testimonal:nth-child(1) {
+        grid-area: first;
+      }
+    
+      .reviews .testimonal:nth-child(2) {
+        grid-area: second;
+      }
+    
+      .reviews .testimonal:nth-child(3) {
+        grid-area: third;
+      }
+    
+      .reviews-img {
+        height: 160px;
+        width: 160px;
+      }
+    
+      .testimonal {
+        padding: 1.2rem;
+      }
+    
+      .testimonal i {
+        font-size: 18px;
+      }
+}
+
+@media (max-width: 925px) {
+    .about {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 700px;
+        gap: 20px;
+    }
+
+    .hex-grid {
+        transform: scale(0.6);
+        width: 400px;
+        height: 300px;
+    }
+
+    .about .text-box h2 {
+        font-size: 1.8rem;
+    }
+
+    .about .text-box p {
+        font-size: 0.8rem;
+    }
+
+    .about .text-box button {
+        font-size: 1rem;
+    }
+
+    .contact {
+        margin-bottom: 150px;
+        padding: 25px;
+        height: 650px;
+      }
+    
+      .form {
+        width: 600px;
+        height: 500px;
+      }
+    
+      .contact-info h2 {
+        font-size: 32px;
+      }
+    
+      .h i,
+      .h a {
+        font-size: 17px;
+      }
+    
+      .icons i {
+        font-size: 20px;
+        padding: 4px;
+      }
+    
+      .contact-form input,
+      .contact-form textarea {
+        font-size: 14px;
+        padding: 8px;
+      }
+    
+      .contact-form button {
+        font-size: 14px;
+        padding: 9px;
+      }
+}
+
+@media(max-width: 800px) {
+    .hero-container {
+        height: 400px;
+        width: 350px;
+    }
+
+    .hero .hero-container h1 {
+        font-size: 2rem;
+        }
+
+    .hero .hero-container p {
+        margin-top: 0;
+        font-size: 1rem;
+        }
+
+    .hero .hero-container button {
+        font-size: 1.2rem;
+    }
+
+    .hero-container p {
+        font-size: 0.8rem;
+    }
+
+    .contact {
+        margin-bottom: 200px;
+        padding: 20px;
+        height: 600px;
+      }
+    
+      .form {
+        width: 500px;
+        height: 460px;
+      }
+    
+      .contact-info h2 {
+        font-size: 28px;
+      }
+    
+      .h i,
+      .h a {
+        font-size: 16px;
+      }
+    
+      .icons i {
+        font-size: 18px;
+        padding: 3px;
+      }
+    
+      .contact-form input,
+      .contact-form textarea {
+        font-size: 13px;
+        padding: 7px;
+      }
+    
+      .contact-form button {
+        font-size: 13px;
+        padding: 8px;
+      }
+}
+
+@media (max-width: 700px) {
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+
+  .reviews {
+    margin-bottom: 200px;
+  }
+
+  .testimonal p {
+    font-size: 1rem;
+  }
+
+  .contact {
+    padding: 20px 10px;
+    margin-bottom: 300px;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .icons {
+    margin-top: 15px;
+  }
+}
+
+
+@media(max-width: 576px) {
+    .dropdown {
+        top: 90px;
+        left: 2rem;
+        width: unset;
+    }
+
+    .hero .small-container1 {
+        display: none;
+    }
+
+    .hero .small-container2 {
+        display: none;
+    }
+    
+    .hero {
+        background: url(kepek/hero-res.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .hero-container {
+        height: 350px;
+        width: 300px;
+    }
+
+    .hero .hero-container h1 {
+        font-size: 1.5rem;
+        }
+
+    .hero .hero-container p {
+        margin-top: 50px;
+        font-size: 0.9rem;
+        }
+
+    .hero .hero-container button {
+        font-size: 1rem;
+    }
+
+    .hero-container p {
+        font-size: 0.8rem;
+    }
+
+    .testimonal p {
+      font-size: 0.7rem;
+    }
+
+    footer {
+      padding: 20px 20px;
+    }
+  
+    footer .footer-menu li a,
+    footer .social-icons li a {
+      margin: 0 5px;
+      font-size: 1.1rem;
+    }
+  
+    footer p {
+      font-size: 1rem;
+    }
+  
+    footer .wave {
+      background-size: 600px 100px;
+    }
+}
+
+@media (max-width: 520px) {
+    .about {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 700px;
+        gap: 20px;
+    }
+
+    .hex-grid {
+        transform: scale(0.6);
+        width: 400px;
+        height: 300px;
+    }
+
+    .about .text-box {
+        width: 400px;
+    }
+
+    .about .text-box h2 {
+        font-size: 1.6rem;
+    }
+
+    .about .text-box p {
+        font-size: 0.8rem;
+    }
+
+    .about .text-box button {
+        font-size: 1rem;
+    }
+
+    .reviews {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "first first"
+          "second third";
+        grid-gap: 20px;
+        width: 95%;
+        padding: 20px;
+      }
+    
+      .reviews-img {
+        height: 120px;
+        width: 120px;
+      }
+    
+      .testimonal {
+        padding: 0.8rem;
+      }
+    
+      .testimonal i {
+        font-size: 16px;
+      }
+
+      .testimonal p {
+        font-size: 10px;
+      }
+    
+      .name {
+        font-size: 1.4rem;
+      }
+
+      .desc {
+        font-size: 0.8rem;
+      }
+}
+
+@media(max-width: 450px) {
+    .hero .small-container1 {
+        display: none;
+    }
+
+    .hero .small-container2 {
+        display: none;
+    }
+    
+    .hero {
+        background: url(kepek/hero-res.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .hero-container {
+        height: 350px;
+        width: 200px;
+    }
+
+    .hero .hero-container h1 {
+        font-size: 1.2rem;
+        }
+
+    .hero .hero-container p {
+        display: none;
+        }
+
+    .hero .hero-container button {
+        font-size: 0.9rem;
+    }
+
+    .hero-container p {
+        font-size: 0.8rem;
+    }
+
+    .about .text-box {
+        width: 300px;
+    }
+
+    .hex-grid {
+        transform: scale(0.5);
+        width: 400px;
+        height: 300px;
+    }
+
+    .name {
+      font-size: 20px;
+    }
+
+    .desc {
+      font-size: 14px;
+    }
+
+    .reviews {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .reviews-img {
+      height: 120px;
+      width: 120px;
+    }
+  
+    .testimonal {
+      padding: 0.8rem;
+      border-bottom-right-radius: 80px;
+      border-bottom-left-radius: 80px;
+    }
+  
+    .testimonal i {
+      font-size: 16px;
+    }
+  
+    .name {
+      font-size: 0.95rem;
+    }
+
+    footer {
+      padding: 10px 10px;
+      width: 100%;
+      box-sizing: border-box;
+      position: relative;
+    }
+  
+    footer .footer-menu li a,
+    footer .social-icons li a {
+      margin: 0 5px;
+      font-size: 0.8rem;
+    }
+  
+    footer p {
+      font-size: 0.7rem;
+      text-align: center;
+    }
+  
+    footer .wave {
+      background-size: 500px 100px;
+    }
+}
+
+@media (max-width: 320px) {
+  .reviews {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .reviews-img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .testimonal {
+    padding: 0.6rem;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .testimonal i {
+    font-size: 14px;
+  }
+
+  .name {
+    font-size: 0.85rem;
+  }
+}

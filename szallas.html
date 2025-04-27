@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Town Escape</title>
+    <link rel="stylesheet" href="szallas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="#"><img src="kepek/logo.png" alt="logó"></a></div>
+            <ul class="links">
+                <li><a href="oldtownescape.html">Főoldal</a></li>
+                <li><a href="szallas.html">Szállás</a></li>
+                <li><a href="oldtownescape.html#about">Rólunk</a></li>
+                <li><a href="oldtownescape.html#contact">Kapcsolat</a></li>
+            </ul>
+            <a href="foglalas.html" class="action_btn">Foglalás</a>
+            <div class="toggle_btn">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="toggle_btn_close">
+                <i class='bx bx-x'></i>
+            </div>
+        </nav>
+
+        <nav class="dropdown">
+                <li><a href="oldtownescape.html">Főoldal</a></li>
+                <li><a href="szallas.html">Szállás</a></li>
+                <li><a href="oldtownescape.html#about">Rólunk</a></li>
+                <li><a href="oldtownescape.html#contact">Kapcsolat</a></li>
+                <li><a href="foglalas.html" class="action_btn">Foglalás</a></li>
+        </nav>
+    </header>
+
+    <main>    
+        <section class="hero">
+            <h1>Old Town Escape</h1>
+            <button id="hero-cta">Lefoglalom!</button>
+        </section>
+
+        <section class="room">
+            <div class="gallery-container">
+                <div class="active-image">
+                    <img id="mainImage" src="kepek/room2.jpg" alt="Active">
+                </div>
+                <div class="thumbnail-row">
+                    <img class="thumbnail active" src="kepek/room2.jpg" alt="Szoba 1">
+                    <img class="thumbnail" src="kepek/room4.jpg" alt="szoba 2">
+                    <img class="thumbnail" src="kepek/room5.jpg" alt="szoba 3">
+                    <img class="thumbnail" src="kepek/room3.jpg" alt="szoba 4">
+                    <img class="thumbnail" src="kepek/breakfast.jpg" alt="szoba 5">
+                </div>
+            </div>
+        
+            <div id="modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div class="modal-nav left" id="prevBtn">&#10094;</div>
+                <div class="modal-nav right" id="nextBtn">&#10095;</div>
+            </div>
+            <div class="info">
+                <ul>
+                    <li>Légkondícionáló</li>
+                    <li>Saját fürdőszoba</li>
+                    <li>Ingyen wifi</li>
+                    <li>Konyha</li>
+                    <li>Ingyenes parkolás</li>
+                    <li>Reggeli az árban</li>
+                    <li>Svédasztalos reggeli</li>
+                    <li>Mini bár</li>
+                    <li>Jakuzzi</li>
+                    <li>Szauna</li>
+                    <li>Takarítás minden nap</li>
+                    <li>Tengerre nyíló kilátás</li>
+                </ul>
+                <button id="book">foglalás</button>
+            </div>
+            <div class="rating">
+                <div class="rating-circle">
+                    <span>9.8</span>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icons">
+            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+            <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+            <li><a href="#"><i class='bx bxl-tiktok'></i></a></li>
+            <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+        </ul>
+        <ul class="footer-menu">
+            <li><a href="oldtownescape.html">Főoldal</a></li>
+            <li><a href="szallas.html">Szállás</a></li>
+            <li><a href="galleria.html">Galléria</a></li>
+            <li><a href="#about">Rólunk</a></li>
+            <li><a href="#contact">Kapcsolat</a></li>
+        </ul>
+        <p>&copy; 2025 Old Town Escape. Minden jog fenntartva.</p>
+    </footer>
+
+    <script src="szallas.js"></script>
+
+</body>
+</html>
